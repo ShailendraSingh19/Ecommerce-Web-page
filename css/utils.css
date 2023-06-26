@@ -1,0 +1,35 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  height: 100vh;
+
+}
+
+/* p{
+  background-color: antiquewhite;
+ 
+
+} */
+
+/* p::after{
+  content: '';
+  background-color: rgb(255, 0, 0);
+} */
+p::after{
+  content: ' ';
+  background:red;
+  display: block;
+  width: 0; /* Set a width for the pseudo-element */
+  height: 20px;
+  /* transition-duration: 5s; */
+}
+p:hover::after{
+  content: ' ';
+  background:red;
+  display: block;
+  width: 100%; /* Set a width for the pseudo-element */
+  /* height: 20px; */
+  transition-duration: 1s;
+}
